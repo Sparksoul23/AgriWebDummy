@@ -10,21 +10,21 @@ Its architecture is kept deliberately lightweight, utilizing grid layouts and va
 ## Project Structure
 ```text
 AgriWebDummy/
-â”œâ”€â”€ index.html                # Main landing page
-â”œâ”€â”€ about.html                # Company history & team layout
-â”œâ”€â”€ products.html             # Main catalogue grid layout
-â”œâ”€â”€ product-detail.html       # Individual product specification page
-â”œâ”€â”€ smart-selector.html       # Multi-step seed recommendation wizard
-â”œâ”€â”€ technology.html           # Research methodology overview
-â”œâ”€â”€ blog.html & blog-post.html# Knowledge center & articles
-â”œâ”€â”€ sustainability.html       # Corporate responsibility
-â”œâ”€â”€ distributors.html         # Network application portal
-â”œâ”€â”€ contact.html              # Core communication interfaces
-â”œâ”€â”€ careers.html              # Job portal layout
-â””â”€â”€ assets/
-    â”œâ”€â”€ css/                  # Structured stylesheet bundles
-    â”œâ”€â”€ js/                   # Segmented module operations
-    â””â”€â”€ images/               # Local site graphical assets
+├── index.html                # Main landing page
+├── about.html                # Company history & team layout
+├── products.html             # Main catalogue grid layout
+├── product-detail.html       # Individual product specification page
+├── smart-selector.html       # Multi-step seed recommendation wizard
+├── technology.html           # Research methodology overview
+├── blog.html & blog-post.html# Knowledge center & articles
+├── sustainability.html       # Corporate responsibility
+├── distributors.html         # Network application portal
+├── contact.html              # Core communication interfaces
+├── careers.html              # Job portal layout
+└── assets/
+    ├── css/                  # Structured stylesheet bundles
+    ├── js/                   # Segmented module operations
+    └── images/               # Local site graphical assets
 ```
 
 ## Features
