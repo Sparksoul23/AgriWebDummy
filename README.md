@@ -33,6 +33,6 @@ AgriWebDummy/
 - **Dynamic Product Grids:** JSON-driven architecture (`products.json`) parsing product statistics natively inside `product-filter.js`.
 - **Performant Vector Media:** Clean implementation of scalable, high-resolution SVG icon layouts ensuring no text-encoding fragmentation issues across browsers.
 
-## ðŸ”— Links
+## 🔗 Links
 - **GitHub Profile**: [Sparksoul23](https://github.com/Sparksoul23)
 - **Email**: [Vikramyadav1192007@gmail.com](mailto:Vikramyadav1192007@gmail.com)
