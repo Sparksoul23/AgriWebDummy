@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Find the perfect seed variety for your farm with AgriWeb's Smart Seed Selector tool.">
+    <title>Smart Seed Selector | AgriWeb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/selector.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 0 1 0 20" />
+                        <path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5" />
+                        <path d="M12 2v10l4.5 4.5" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    AgriWeb
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+                        <li><a href="about.html" class="nav__link">About</a></li>
+                        <li><a href="products.html" class="nav__link">Products</a></li>
+                        <li><a href="technology.html" class="nav__link">Technology</a></li>
+                        <li><a href="smart-selector.html" class="nav__link active">Seed Selector</a></li>
+                        <li><a href="blog.html" class="nav__link">Blog</a></li>
+                        <li><a href="contact.html" class="btn btn--primary btn--sm">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+                <li><a href="about.html" class="mobile-menu__link">About Us</a></li>
+                <li><a href="products.html" class="mobile-menu__link">Products</a></li>
+                <li><a href="technology.html" class="mobile-menu__link">Technology</a></li>
+                <li><a href="sustainability.html" class="mobile-menu__link">Sustainability</a></li>
+                <li><a href="smart-selector.html" class="mobile-menu__link active">Smart Seed Selector</a></li>
+                <li><a href="blog.html" class="mobile-menu__link">Blog</a></li>
+                <li><a href="distributors.html" class="mobile-menu__link">Become a Distributor</a></li>
+                <li><a href="careers.html" class="mobile-menu__link">Careers</a></li>
+                <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Smart Seed Selector</h1>
+                <div class="page-header__breadcrumb"><a href="index.html">Home</a><span>/</span><span>Seed
+                        Selector</span></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="selector-container">
+                    <!-- Progress Bar -->
+                    <div class="selector-progress">
+                        <div class="progress-bar">
+                            <div class="progress-bar__fill" style="width:0%"></div>
+                            <div class="progress-step active"><span class="progress-step__circle">1</span><span
+                                    class="progress-step__label">Crop</span></div>
+                            <div class="progress-step"><span class="progress-step__circle">2</span><span
+                                    class="progress-step__label">Location</span></div>
+                            <div class="progress-step"><span class="progress-step__circle">3</span><span
+                                    class="progress-step__label">Conditions</span></div>
+                            <div class="progress-step"><span class="progress-step__circle">4</span><span
+                                    class="progress-step__label">Irrigation</span></div>
+                            <div class="progress-step"><span class="progress-step__circle">5</span><span
+                                    class="progress-step__label">Goals</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Selector Card -->
+                    <div class="selector-card">
+                        <!-- Step 1: Crop Type -->
+                        <div class="selector-step active" data-step="1">
+                            <h2 class="selector-card__title">What crop do you want to grow?</h2>
+                            <div class="option-grid" data-field="crop">
+                                <div class="option-card" data-value="rice">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M12 2v20"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h8"/></svg></div>
+                                    <div class="option-card__title">Rice</div>
+                                </div>
+                                <div class="option-card" data-value="wheat">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M12 2v20"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h8"/></svg></div>
+                                    <div class="option-card__title">Wheat</div>
+                                </div>
+                                <div class="option-card" data-value="pulses">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13V4h9a7 7 0 0 1 7 7v9h-9Z"/><path d="M11 20V11"/></svg></div>
+                                    <div class="option-card__title">Pulses</div>
+                                </div>
+                                <div class="option-card" data-value="oilseeds">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v7"/><path d="M12 15v7"/></svg></div>
+                                    <div class="option-card__title">Oilseeds</div>
+                                </div>
+                                <div class="option-card" data-value="vegetables">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13V4h9a7 7 0 0 1 7 7v9h-9Z"/><path d="M11 20V11"/></svg></div>
+                                    <div class="option-card__title">Vegetables</div>
+                                </div>
+                                <div class="option-card" data-value="millets">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M12 2v20"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h8"/></svg></div>
+                                    <div class="option-card__title">Millets</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Location -->
+                        <div class="selector-step" data-step="2">
+                            <h2 class="selector-card__title">Select your region</h2>
+                            <div class="option-grid" data-field="location">
+                                <div class="option-card" data-value="north">
+                                    <div class="option-card__title">North India</div>
+                                    <div class="option-card__desc">Punjab, Haryana, UP</div>
+                                </div>
+                                <div class="option-card" data-value="south">
+                                    <div class="option-card__title">South India</div>
+                                    <div class="option-card__desc">TN, AP, Karnataka</div>
+                                </div>
+                                <div class="option-card" data-value="east">
+                                    <div class="option-card__title">East India</div>
+                                    <div class="option-card__desc">WB, Bihar, Odisha</div>
+                                </div>
+                                <div class="option-card" data-value="west">
+                                    <div class="option-card__title">West India</div>
+                                    <div class="option-card__desc">Maharashtra, Gujarat</div>
+                                </div>
+                                <div class="option-card" data-value="central">
+                                    <div class="option-card__title">Central India</div>
+                                    <div class="option-card__desc">MP, Chhattisgarh</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Soil & Season -->
+                        <div class="selector-step" data-step="3">
+                            <h2 class="selector-card__title">Soil Type & Season</h2>
+                            <p class="selector-card__subtitle">Tell us about your growing conditions</p>
+                            <h4 style="margin-bottom:var(--space-sm);">Soil Type</h4>
+                            <div class="option-grid" data-field="soil" style="margin-bottom:var(--space-lg);">
+                                <div class="option-card" data-value="clay">
+                                    <div class="option-card__title">Clay</div>
+                                </div>
+                                <div class="option-card" data-value="loamy">
+                                    <div class="option-card__title">Loamy</div>
+                                </div>
+                                <div class="option-card" data-value="sandy-loam">
+                                    <div class="option-card__title">Sandy Loam</div>
+                                </div>
+                                <div class="option-card" data-value="black">
+                                    <div class="option-card__title">Black Soil</div>
+                                </div>
+                            </div>
+                            <h4 style="margin-bottom:var(--space-sm);">Season</h4>
+                            <div class="option-grid" data-field="season">
+                                <div class="option-card" data-value="kharif">
+                                    <div class="option-card__title">Kharif</div>
+                                    <div class="option-card__desc">Jun-Oct</div>
+                                </div>
+                                <div class="option-card" data-value="rabi">
+                                    <div class="option-card__title">Rabi</div>
+                                    <div class="option-card__desc">Nov-Mar</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Irrigation -->
+                        <div class="selector-step" data-step="4">
+                            <h2 class="selector-card__title">Irrigation Availability</h2>
+                            <div class="option-grid" da                                <div class="option-card" data-value="irrigated">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+                                    <div class="option-card__title">Irrigated</div>
+                                    <div class="option-card__desc">Regular water supply</div>
+                                </div>
+                                <div class="option-card" data-value="rainfed">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg></div>
+                                    <div class="option-card__title">Rainfed</div>
+                                    <div class="option-card__desc">Depends on rainfall</div>
+                                </div>
+                                <div class="option-card" data-value="both">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M2 12h4l2-3 4 6 2-3h4"/><path d="M22 17H2"/></svg></div>
+                                    <div class="option-card__title">Partial</div>
+                                    <div class="option-card__desc">Limited irrigation</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Goals -->
+                        <div class="selector-step" data-step="5">
+                            <h2 class="selector-card__title">What's your priority?</h2>
+                            <div class="option-grid" data-field="goal">
+                                <div class="option-card" data-value="yield">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                                    <div class="option-card__title">Maximum Yield</div>
+                                </div>
+                                <div class="option-card" data-value="quality">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                    <div class="option-card__title">Premium Quality</div>
+                                </div>
+                                <div class="option-card" data-value="resistance">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                                    <div class="option-card__title">Disease Resistance</div>
+                                </div>
+                                <div class="option-card" data-value="early">
+                                    <div class="option-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                                    <div class="option-card__title">Early Maturity</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="selector-step selector-results" data-step="results">
+                            <div class="results-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <h2>Your Recommended Seeds</h2>
+                            <p>Based on your inputs, here are the best matches for your farm:</p>
+                            <div class="recommended-seeds"></div>
+                            <div style="margin-top:var(--space-lg);"><a href="products.html"
+                                    class="btn btn--secondary">View All Products</a></div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="selector-nav">
+                            <button id="selector-prev" class="btn btn--secondary" style="visibility:hidden;">â†
+                                Back</button>
+                            <button id="selector-next" class="btn btn--primary">Next Step â†’</button>
+                            <button id="selector-restart" class="btn btn--primary" style="display:none;">Start
+                                Over</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">AgriWeb</div>
+                    <p class="footer__desc">Premium quality agricultural seeds backed by science. Empowering farmers
+                        with better
+                        yields since 2010.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="footer__heading">Products</h5>
+                    <div class="footer__links">
+                        <a href="products.html?category=rice" class="footer__link">Rice Seeds</a>
+                        <a href="products.html?category=wheat" class="footer__link">Wheat Seeds</a>
+                        <a href="products.html?category=pulses" class="footer__link">Pulses</a>
+                        <a href="products.html?category=vegetables" class="footer__link">Vegetables</a>
+                        <a href="products.html" class="footer__link">All Products</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="footer__heading">Company</h5>
+                    <div class="footer__links">
+                        <a href="about.html" class="footer__link">About Us</a>
+                        <a href="technology.html" class="footer__link">Technology</a>
+                        <a href="sustainability.html" class="footer__link">Sustainability</a>
+                        <a href="careers.html" class="footer__link">Careers</a>
+                        <a href="contact.html" class="footer__link">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="footer__heading">Support</h5>
+                    <div class="footer__links">
+                        <a href="smart-selector.html" class="footer__link">Seed Selector</a>
+                        <a href="blog.html" class="footer__link">Knowledge Center</a>
+                        <a href="distributors.html" class="footer__link">Become Distributor</a>
+                        <a href="#" class="footer__link">FAQs</a>
+                        <a href="tel:+919876543210" class="footer__link">Helpline: +91-9876543210</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+        <p>&copy; 2026 Vikram &middot; Designed &amp; Built by Vikram &middot; Made with curiosity ✦</p>
+      </div>
+    </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener"
+        aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="assets/js/core/protection.js"></script>
+    <script src="assets/js/core/theme-lang.js"></script>
+    <script src="assets/js/core/main.js"></script>
+    <script src="assets/js/modules/selector-logic.js"></script>
+</body>
+
+</html>

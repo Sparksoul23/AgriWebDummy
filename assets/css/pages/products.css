@@ -1,0 +1,228 @@
+﻿/* 
+ * AgriWeb - Products Page Styles 
+ */
+
+/* Product Filters */
+.products-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+.product-filters {
+    background: var(--bg-card);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.product-filters__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-group {
+    margin-bottom: var(--space-md);
+}
+
+.filter-group__label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+    color: var(--text-dark);
+}
+
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.filter-tag {
+    padding: 8px 16px;
+    background: var(--bg-light);
+    border: 1px solid transparent;
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-tag:hover,
+.filter-tag.active {
+    background: rgba(46, 125, 50, 0.1);
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+/* Products Toolbar */
+.products-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.products-count {
+    color: var(--text-muted);
+}
+
+.products-sort {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.products-sort label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.products-sort select {
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius-sm);
+    background: var(--bg-card);
+    font-size: 0.9rem;
+}
+
+/* Product Card Details */
+.product-card .card__body {
+    padding: var(--space-md);
+}
+
+.product-card__category {
+    font-size: 0.8rem;
+    color: var(--secondary-green);
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-card__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: var(--space-xs);
+}
+
+.product-card__variety {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: var(--space-sm);
+}
+
+.product-card__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--space-sm);
+}
+
+.product-card__feature {
+    padding: 4px 8px;
+    background: var(--bg-light);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    border-radius: var(--radius-sm);
+}
+
+.product-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-sm);
+    border-top: 1px solid #f0f0f0;
+}
+
+.product-card__yield {
+    font-size: 0.9rem;
+}
+
+.product-card__yield strong {
+    color: var(--primary-green);
+}
+
+/* No Products */
+.no-products {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+}
+
+.no-products svg {
+    width: 64px;
+    height: 64px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-md);
+}
+
+/* Mobile filter toggle */
+.filter-toggle {
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--space-md);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .products-layout {
+        grid-template-columns: 280px 1fr;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .filter-toggle {
+        display: none;
+    }
+
+    .product-filters {
+        position: sticky;
+        top: 90px;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 1280px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Dark Mode Refinements for Products */
+[data-theme="dark"] .product-filters__title,
+[data-theme="dark"] .products-sort select,
+[data-theme="dark"] .product-card__footer {
+    border-color: #333;
+}
+
+[data-theme="dark"] .filter-tag {
+    background: #252525;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .product-card__feature {
+    background: #252525;
+}

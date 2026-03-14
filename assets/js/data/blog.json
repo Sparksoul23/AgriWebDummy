@@ -1,0 +1,147 @@
+{
+    "categories": [
+        {
+            "id": "farming-tips",
+            "name": "Farming Tips",
+            "count": 12
+        },
+        {
+            "id": "seed-technology",
+            "name": "Seed Technology",
+            "count": 8
+        },
+        {
+            "id": "crop-management",
+            "name": "Crop Management",
+            "count": 15
+        },
+        {
+            "id": "market-insights",
+            "name": "Market Insights",
+            "count": 6
+        },
+        {
+            "id": "sustainability",
+            "name": "Sustainability",
+            "count": 9
+        }
+    ],
+    "posts": [
+        {
+            "id": "hybrid-vs-traditional-seeds",
+            "title": "Hybrid vs Traditional Seeds: What's Best for Your Farm?",
+            "excerpt": "Understanding the key differences between hybrid and traditional seed varieties to make informed decisions for better yields.",
+            "category": "seed-technology",
+            "author": {
+                "name": "Dr. Rajesh Sharma",
+                "avatar": "rajesh.jpg",
+                "role": "Chief Agronomist"
+            },
+            "date": "2026-02-05",
+            "readTime": "8 min read",
+            "image": "hybrid-seeds.jpg",
+            "isFeatured": true,
+            "tags": [
+                "Hybrid Seeds",
+                "Traditional Farming",
+                "Yield Optimization"
+            ]
+        },
+        {
+            "id": "water-management-rice",
+            "title": "Smart Water Management Techniques for Rice Cultivation",
+            "excerpt": "Learn proven irrigation strategies to maximize rice production while conserving water resources.",
+            "category": "crop-management",
+            "author": {
+                "name": "Priya Patel",
+                "avatar": "priya.jpg",
+                "role": "Agriculture Specialist"
+            },
+            "date": "2026-01-28",
+            "readTime": "6 min read",
+            "image": "rice-irrigation.jpg",
+            "tags": [
+                "Rice",
+                "Water Management",
+                "Irrigation"
+            ]
+        },
+        {
+            "id": "soil-health-testing",
+            "title": "Why Soil Health Testing is Essential Before Every Season",
+            "excerpt": "Discover how regular soil testing can help you optimize fertilizer use and improve crop productivity.",
+            "category": "farming-tips",
+            "author": {
+                "name": "Amit Kumar",
+                "avatar": "amit.jpg",
+                "role": "Soil Scientist"
+            },
+            "date": "2026-01-20",
+            "readTime": "5 min read",
+            "image": "soil-testing.jpg",
+            "tags": [
+                "Soil Health",
+                "Testing",
+                "Fertilizers"
+            ]
+        },
+        {
+            "id": "climate-resilient-varieties",
+            "title": "Climate-Resilient Seed Varieties for Changing Weather Patterns",
+            "excerpt": "Explore new seed varieties engineered to withstand extreme weather and ensure stable yields.",
+            "category": "seed-technology",
+            "author": {
+                "name": "Dr. Sunita Verma",
+                "avatar": "sunita.jpg",
+                "role": "Research Director"
+            },
+            "date": "2026-01-15",
+            "readTime": "10 min read",
+            "image": "climate-seeds.jpg",
+            "isFeatured": true,
+            "tags": [
+                "Climate Change",
+                "Research",
+                "Innovation"
+            ]
+        },
+        {
+            "id": "organic-pest-control",
+            "title": "Natural Pest Control Methods for Organic Farming",
+            "excerpt": "Effective biological and cultural pest management strategies that reduce chemical dependency.",
+            "category": "sustainability",
+            "author": {
+                "name": "Vikram Singh",
+                "avatar": "vikram.jpg",
+                "role": "Organic Farming Expert"
+            },
+            "date": "2026-01-10",
+            "readTime": "7 min read",
+            "image": "organic-pest.jpg",
+            "tags": [
+                "Organic",
+                "Pest Control",
+                "Sustainable"
+            ]
+        },
+        {
+            "id": "wheat-market-trends-2026",
+            "title": "Wheat Market Trends and Price Forecasts for 2026",
+            "excerpt": "Analysis of current market conditions and what farmers can expect for wheat prices this season.",
+            "category": "market-insights",
+            "author": {
+                "name": "Rahul Mehta",
+                "avatar": "rahul.jpg",
+                "role": "Market Analyst"
+            },
+            "date": "2026-01-05",
+            "readTime": "6 min read",
+            "image": "wheat-market.jpg",
+            "tags": [
+                "Wheat",
+                "Market Analysis",
+                "Price Forecast"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,209 @@
+﻿{
+  "categories": [
+    {
+      "id": "rice",
+      "name": "Rice Seeds",
+      "icon": "grain"
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat Seeds",
+      "icon": "wheat"
+    },
+    {
+      "id": "pulses",
+      "name": "Pulses",
+      "icon": "lentil"
+    },
+    {
+      "id": "oilseeds",
+      "name": "Oilseeds",
+      "icon": "sunflower"
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetable Seeds",
+      "icon": "carrot"
+    },
+    {
+      "id": "millets",
+      "name": "Millets",
+      "icon": "grain"
+    }
+  ],
+  "products": [
+    {
+      "id": "avr-101",
+      "name": "AgriWeb Supreme",
+      "category": "rice",
+      "variety": "Hybrid Paddy",
+      "description": "High-yielding hybrid rice variety with excellent grain quality and strong disease resistance. Ideal for irrigated conditions.",
+      "duration": "125-130 days",
+      "yield": "70-80 qtl/ha",
+      "season": "Kharif",
+      "features": [
+        "High Yield",
+        "Disease Resistant",
+        "Fine Grain"
+      ],
+      "resistance": [
+        "Blast",
+        "BLB",
+        "Stem Borer"
+      ],
+      "soilType": [
+        "Clay",
+        "Loamy"
+      ],
+      "irrigation": "Irrigated",
+      "image": "rice-supreme.jpg",
+      "isFeatured": true,
+      "badge": "Best Seller"
+    },
+    {
+      "id": "avr-102",
+      "features": [
+        "Quick Cooking",
+        "Nutritious",
+        "Heat Tolerant"
+      ],
+      "resistance": [
+        "Rust",
+        "Wilt"
+      ],
+      "soilType": [
+        "Loamy",
+        "Sandy Loam"
+      ],
+      "irrigation": "Rainfed",
+      "image": "lentil-masoor.jpg"
+    },
+    {
+      "id": "avo-401",
+      "name": "AgriWeb Sunburst",
+      "category": "oilseeds",
+      "variety": "Sunflower Hybrid",
+      "description": "High oil content sunflower hybrid with uniform maturity. Excellent for commercial oil extraction.",
+      "duration": "90-95 days",
+      "yield": "20-25 qtl/ha",
+      "season": "Kharif/Rabi",
+      "features": [
+        "45% Oil Content",
+        "Uniform Heads",
+        "Drought Tolerant"
+      ],
+      "resistance": [
+        "Alternaria",
+        "Downy Mildew"
+      ],
+      "soilType": [
+        "Black Soil",
+        "Loamy"
+      ],
+      "irrigation": "Both",
+      "image": "sunflower-burst.jpg"
+    },
+    {
+      "id": "avo-402",
+      "name": "AgriWeb Mustard King",
+      "category": "oilseeds",
+      "variety": "Indian Mustard",
+      "description": "Bold seeded mustard with high oil content. Suitable for late sowing conditions.",
+      "duration": "125-130 days",
+      "yield": "18-22 qtl/ha",
+      "season": "Rabi",
+      "features": [
+        "42% Oil",
+        "Bold Seed",
+        "Late Sowing"
+      ],
+      "resistance": [
+        "White Rust",
+        "Aphids"
+      ],
+      "soilType": [
+        "Loamy",
+        "Sandy Loam"
+      ],
+      "irrigation": "Both",
+      "image": "mustard-king.jpg",
+      "badge": "New"
+    },
+    {
+      "id": "avv-501",
+      "name": "AgriWeb Tamatar Pro",
+      "category": "vegetables",
+      "variety": "Determinate Tomato",
+      "description": "High-yielding determinate tomato with firm fruits. Excellent shelf life and uniform ripening.",
+      "duration": "60-65 days",
+      "yield": "400-500 qtl/ha",
+      "season": "Kharif/Rabi",
+      "features": [
+        "Firm Fruits",
+        "Long Shelf Life",
+        "Virus Tolerant"
+      ],
+      "resistance": [
+        "ToLCV",
+        "Bacterial Wilt"
+      ],
+      "soilType": [
+        "Loamy",
+        "Well Drained"
+      ],
+      "irrigation": "Irrigated",
+      "image": "tomato-pro.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": "avv-502",
+      "name": "AgriWeb Mirchi Max",
+      "category": "vegetables",
+      "variety": "Hot Pepper",
+      "description": "High pungency chilli with excellent color retention. Suitable for green and dry purposes.",
+      "duration": "70-75 days",
+      "yield": "150-180 qtl/ha",
+      "season": "Kharif",
+      "features": [
+        "High Pungency",
+        "Good Color",
+        "Dual Purpose"
+      ],
+      "resistance": [
+        "Anthracnose",
+        "Leaf Curl"
+      ],
+      "soilType": [
+        "Loamy",
+        "Red Soil"
+      ],
+      "irrigation": "Irrigated",
+      "image": "chilli-max.jpg"
+    },
+    {
+      "id": "avm-601",
+      "name": "AgriWeb Bajra Plus",
+      "category": "millets",
+      "variety": "Pearl Millet Hybrid",
+      "description": "Drought-tolerant pearl millet with high yield potential. Suitable for arid and semi-arid regions.",
+      "duration": "80-85 days",
+      "yield": "25-30 qtl/ha",
+      "season": "Kharif",
+      "features": [
+        "Drought Tolerant",
+        "High Iron",
+        "Early Maturity"
+      ],
+      "resistance": [
+        "Downy Mildew",
+        "Ergot"
+      ],
+      "soilType": [
+        "Sandy",
+        "Sandy Loam"
+      ],
+      "irrigation": "Rainfed",
+      "image": "bajra-plus.jpg"
+    }
+  ]
+}

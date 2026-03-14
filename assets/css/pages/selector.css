@@ -1,0 +1,400 @@
+﻿/* 
+ * AgriWeb - Smart Seed Selector Styles 
+ */
+
+.selector-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Progress Bar */
+.selector-progress {
+    margin-bottom: var(--space-xl);
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #e5e7eb;
+    z-index: 0;
+}
+
+.progress-bar__fill {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    height: 4px;
+    background: var(--primary-green);
+    transition: width var(--transition-normal);
+    z-index: 1;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.progress-step__circle {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5e7eb;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+}
+
+.progress-step.active .progress-step__circle,
+.progress-step.completed .progress-step__circle {
+    background: var(--primary-green);
+    color: white;
+}
+
+.progress-step__label {
+    margin-top: var(--space-xs);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 80px;
+}
+
+.progress-step.active .progress-step__label {
+    color: var(--primary-green);
+    font-weight: 500;
+}
+
+/* Selector Card */
+.selector-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-xl);
+}
+
+.selector-card__title {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.selector-card__subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: calc(-1 * var(--space-sm));
+    margin-bottom: var(--space-lg);
+}
+
+/* Step Content */
+.selector-step {
+    display: none;
+}
+
+.selector-step.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Option Cards */
+.option-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.option-card {
+    padding: var(--space-md);
+    background: var(--bg-light);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.option-card:hover {
+    border-color: var(--secondary-green);
+}
+
+.option-card.selected {
+    background: rgba(46, 125, 50, 0.1);
+    border-color: var(--primary-green);
+}
+
+.option-card__icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto var(--space-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.option-card__icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-green);
+}
+
+.option-card__title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.option-card__desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* Range Slider */
+.range-group {
+    margin-bottom: var(--space-lg);
+}
+
+.range-group__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+}
+
+.range-group__label {
+    font-weight: 500;
+}
+
+.range-group__value {
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+.range-slider {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: var(--radius-full);
+    appearance: none;
+    cursor: pointer;
+}
+
+.range-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: var(--primary-green);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Navigation Buttons */
+.selector-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid #e5e7eb;
+}
+
+.selector-nav .btn {
+    flex: 1;
+    max-width: 200px;
+}
+
+/* Results Section */
+.selector-results {
+    text-align: center;
+}
+
+.results-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--tech-accent) 0%, var(--secondary-green) 100%);
+    border-radius: var(--radius-full);
+}
+
+.results-icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+/* Recommended Seeds */
+.recommended-seeds {
+    margin-top: var(--space-xl);
+}
+
+.recommended-seed {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+    text-align: left;
+}
+
+.recommended-seed__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.recommended-seed__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.recommended-seed__score {
+    padding: 6px 14px;
+    background: var(--tech-accent);
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: var(--radius-full);
+}
+
+.recommended-seed__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+}
+
+.seed-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.seed-detail svg {
+    width: 18px;
+    height: 18px;
+    color: var(--primary-green);
+}
+
+.recommended-seed__resistances {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.resistance-tag {
+    padding: 4px 10px;
+    background: rgba(62, 213, 152, 0.15);
+    color: #166534;
+    font-size: 0.8rem;
+    border-radius: var(--radius-full);
+}
+
+.recommended-seed__reason {
+    padding: var(--space-sm);
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    border-left: 3px solid var(--tech-accent);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    .option-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recommended-seed {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .recommended-seed__details {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 639px) {
+    .progress-step__label {
+        display: none;
+    }
+
+    .selector-card {
+        padding: var(--space-md);
+    }
+}
+
+/* Dark Mode Refinements for Selector */
+[data-theme="dark"] .progress-bar::before,
+[data-theme="dark"] .progress-step__circle,
+[data-theme="dark"] .range-slider {
+    background: #333;
+}
+
+[data-theme="dark"] .option-card__icon {
+    background: #252525;
+}
+
+[data-theme="dark"] .option-card.selected {
+    background: rgba(76, 175, 80, 0.15);
+    border-color: var(--primary-green);
+}
+
+[data-theme="dark"] .selector-nav {
+    border-color: #333;
+}
+
+[data-theme="dark"] .resistance-tag {
+    background: rgba(76, 175, 80, 0.2);
+    color: #81C784;
+}
+
+[data-theme="dark"] .recommended-seed__reason {
+    background: #252525;
+}
+
+[data-theme="dark"] .progress-step.active .progress-step__circle,
+[data-theme="dark"] .progress-step.completed .progress-step__circle {
+    background: var(--primary-green);
+    color: white;
+}

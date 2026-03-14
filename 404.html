@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | AgriWeb</title>
+    <meta http-equiv="refresh" content="3;url=/index.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: linear-gradient(135deg, #2E7D32 0%, #1b5e20 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 120px;
+            font-weight: 700;
+            opacity: 0.3;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            opacity: 0.8;
+            margin-bottom: 24px;
+        }
+
+        a {
+            display: inline-block;
+            background: #FFC107;
+            color: #1b5e20;
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            background: #FFD54F;
+        }
+
+        /* Dark mode support for 404 */
+        [data-theme="dark"] body {
+            background: linear-gradient(135deg, #1B5E20 0%, #0D3311 100%);
+            color: #E0E0E0;
+        }
+
+        [data-theme="dark"] a {
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>The page you're looking for doesn't exist or has been moved. You'll be redirected to the homepage in 3
+            seconds.</p>
+        <a href="/index.html">Go to Homepage</a>
+    </div>
+    <script src="assets/js/core/theme-lang.js"></script>
+</body>
+
+</html>

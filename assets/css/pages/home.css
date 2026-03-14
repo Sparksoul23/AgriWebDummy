@@ -1,0 +1,278 @@
+/* 
+ * AgriWeb - Home Page Styles 
+ */
+
+/* Hero Section Enhancement */
+.home-hero {
+    min-height: 85vh;
+    background:
+        linear-gradient(135deg, rgba(46, 125, 50, 0.95) 0%, rgba(27, 94, 32, 0.9) 100%),
+        url('../images/farms/hero-farm.jpg') center/cover no-repeat;
+}
+
+.home-hero .hero__content {
+    max-width: 650px;
+}
+
+.home-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: var(--radius-full);
+    color: var(--tech-accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: var(--space-md);
+}
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.trust-badge__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+}
+
+.trust-badge__icon svg {
+    width: 20px;
+    height: 20px;
+    color: var(--tech-accent);
+}
+
+.trust-badge__text strong {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.trust-badge__text span {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Features Section */
+.features {
+    background: var(--bg-card);
+}
+
+.feature-highlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.feature-highlight--reverse {
+    direction: ltr;
+}
+
+.feature-highlight__image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 16/10;
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--primary-green) 100%);
+}
+
+.feature-highlight__content {
+    direction: ltr;
+}
+
+.feature-highlight__label {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(46, 125, 50, 0.1);
+    color: var(--primary-green);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-md);
+}
+
+.feature-highlight__list {
+    margin-bottom: var(--space-lg);
+}
+
+.feature-highlight__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    color: var(--text-muted);
+}
+
+.feature-highlight__list li svg {
+    width: 20px;
+    height: 20px;
+    color: var(--tech-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Categories Section */
+.categories {
+    background: var(--bg-light);
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.category-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.category-card__icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--tech-accent) 0%, var(--secondary-green) 100%);
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.category-card__icon svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.category-card__title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text-dark);
+}
+
+.category-card__count {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Smart Selector CTA */
+.smart-selector-cta {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-green) 0%, #1b5e20 100%);
+    text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto var(--space-lg);
+}
+
+.cta-section .btn--secondary {
+    border-color: white;
+    color: white;
+}
+
+.cta-section .btn--secondary:hover {
+    background: white;
+    color: var(--primary-green);
+}
+
+/* Testimonials */
+.testimonial-card {
+    padding: var(--space-lg);
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.testimonial-card__quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+}
+
+.testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.testimonial-card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--secondary-green) 0%, var(--primary-green) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.testimonial-card__name {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.testimonial-card__role {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .trust-badges {
+        gap: var(--space-xl);
+    }
+
+    .feature-highlight {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-highlight--reverse {
+        direction: rtl;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-hero {
+        min-height: 90vh;
+    }
+}
